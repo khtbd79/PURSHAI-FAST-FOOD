@@ -1,0 +1,6 @@
+{
+  "name": "Purshai Fast Food POS",
+  "description": "Offline Point of Sale system for Purshai Fast Food.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
