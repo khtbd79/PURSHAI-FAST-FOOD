@@ -362,19 +362,19 @@ export function InventoryScreen({
 
             <div
               className={`rounded-lg p-3 border shadow-2xs ${
-                materialMetrics.zero > 0 ? 'bg-red-50 border-red-300' : 'bg-white border-neutral-300'
+                materialMetrics.zero > 0 ? 'bg-amber-50 border-amber-300' : 'bg-white border-neutral-300'
               }`}
             >
               <span
                 className={`text-[11px] font-bold uppercase tracking-wider block ${
-                  materialMetrics.zero > 0 ? 'text-red-700' : 'text-neutral-500'
+                  materialMetrics.zero > 0 ? 'text-amber-800' : 'text-neutral-500'
                 }`}
               >
                 Zero Stock
               </span>
               <div
                 className={`text-xl sm:text-2xl font-black font-mono mt-0.5 ${
-                  materialMetrics.zero > 0 ? 'text-red-600' : 'text-neutral-900'
+                  materialMetrics.zero > 0 ? 'text-amber-700' : 'text-neutral-900'
                 }`}
               >
                 {materialMetrics.zero}
@@ -451,7 +451,7 @@ export function InventoryScreen({
                     key={ing.id}
                     className={`bg-white rounded-lg border p-4 shadow-2xs transition-all ${
                       isZero
-                        ? 'border-red-300 bg-red-50/20'
+                        ? 'border-amber-400 bg-amber-50/20'
                         : isLow
                         ? 'border-amber-300 bg-amber-50/20'
                         : 'border-neutral-200'
@@ -470,17 +470,17 @@ export function InventoryScreen({
                       <div className="text-right shrink-0">
                         <span
                           className={`font-mono font-black text-lg block ${
-                            isZero ? 'text-red-600' : isLow ? 'text-amber-700' : 'text-neutral-900'
+                            isZero ? 'text-amber-800' : isLow ? 'text-amber-700' : 'text-neutral-900'
                           }`}
                         >
                           {formatAmount(ing.currentStock, ing.unit)}
                         </span>
                         {isZero ? (
-                          <span className="text-[10px] font-black uppercase text-red-600 bg-red-100 px-1.5 py-0.5 rounded">
+                          <span className="text-[10px] font-black uppercase text-amber-900 bg-amber-200 border border-amber-400 px-1.5 py-0.5 rounded">
                             Zero Stock
                           </span>
                         ) : isLow ? (
-                          <span className="text-[10px] font-bold uppercase text-amber-700 bg-amber-100 px-1.5 py-0.5 rounded">
+                          <span className="text-[10px] font-bold uppercase text-amber-800 bg-amber-100 border border-amber-300 px-1.5 py-0.5 rounded">
                             Low Stock
                           </span>
                         ) : (
@@ -629,19 +629,19 @@ export function InventoryScreen({
 
             <div
               className={`rounded-lg p-3 border shadow-2xs ${
-                menuMetrics.outOfStock > 0 ? 'bg-red-50 border-red-300' : 'bg-white border-neutral-300'
+                menuMetrics.outOfStock > 0 ? 'bg-amber-50 border-amber-300' : 'bg-white border-neutral-300'
               }`}
             >
               <span
                 className={`text-[11px] font-bold uppercase tracking-wider block ${
-                  menuMetrics.outOfStock > 0 ? 'text-red-700' : 'text-neutral-500'
+                  menuMetrics.outOfStock > 0 ? 'text-amber-800' : 'text-neutral-500'
                 }`}
               >
                 Out of Stock
               </span>
               <div
                 className={`text-xl sm:text-2xl font-black font-mono mt-0.5 ${
-                  menuMetrics.outOfStock > 0 ? 'text-red-600' : 'text-neutral-900'
+                  menuMetrics.outOfStock > 0 ? 'text-amber-700' : 'text-neutral-900'
                 }`}
               >
                 {menuMetrics.outOfStock}

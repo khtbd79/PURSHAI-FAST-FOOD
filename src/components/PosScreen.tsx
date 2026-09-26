@@ -195,8 +195,8 @@ export function PosScreen({ menu, settings, onSaleCompleted }: PosScreenProps) {
 
         {/* Temporary Stock Warning Banner */}
         {stockWarning && (
-          <div className="mb-2 p-2.5 bg-red-600 text-white rounded font-bold text-xs flex items-center gap-2 animate-in fade-in shadow-md">
-            <AlertCircle className="w-4 h-4 shrink-0" />
+          <div className="mb-2 p-2.5 bg-amber-500 text-neutral-950 rounded font-bold text-xs flex items-center gap-2 animate-in fade-in shadow-md border border-amber-600">
+            <AlertCircle className="w-4 h-4 shrink-0 text-neutral-950" />
             <span>{stockWarning}</span>
           </div>
         )}
@@ -255,14 +255,14 @@ export function PosScreen({ menu, settings, onSaleCompleted }: PosScreenProps) {
                         {isTracked && (
                           <div className="mt-1">
                             {isOutOfStock ? (
-                              <span className="text-[10px] font-black uppercase text-red-600 bg-red-100 px-1.5 py-0.5 rounded">
+                              <span className="text-[10px] font-black uppercase text-amber-900 bg-amber-200 border border-amber-400 px-1.5 py-0.5 rounded">
                                 OUT OF STOCK
                               </span>
                             ) : (
                               <span
                                 className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${
                                   isLowStock
-                                    ? 'text-amber-800 bg-amber-100 font-mono'
+                                    ? 'text-amber-900 bg-amber-100 border border-amber-300 font-mono'
                                     : 'text-neutral-600 bg-neutral-100 font-mono'
                                 }`}
                               >
