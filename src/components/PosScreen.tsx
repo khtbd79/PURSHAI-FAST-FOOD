@@ -241,13 +241,13 @@ export function PosScreen({ menu, settings, onSaleCompleted }: PosScreenProps) {
                           className="w-13 h-13 sm:w-15 sm:h-15 rounded-md object-cover border border-neutral-200 shrink-0 shadow-2xs"
                         />
                       ) : (
-                        <div className="w-13 h-13 sm:w-15 sm:h-15 rounded-md bg-red-50 border border-red-200 flex items-center justify-center shrink-0 text-red-600 font-black text-lg">
+                        <div className="w-13 h-13 sm:w-15 sm:h-15 rounded-md bg-yellow-50 border border-yellow-200 flex items-center justify-center shrink-0 text-yellow-600 font-black text-lg">
                           {item.name.charAt(0)}
                         </div>
                       )}
 
                       <div className="flex-1 min-w-0">
-                        <span className="font-extrabold text-sm sm:text-base text-red-600 line-clamp-2 leading-tight block">
+                        <span className="font-extrabold text-sm sm:text-base text-yellow-600 line-clamp-2 leading-tight block">
                           {item.name}
                         </span>
 
@@ -365,7 +365,7 @@ export function PosScreen({ menu, settings, onSaleCompleted }: PosScreenProps) {
                         />
                       )}
                       <div className="flex-1 min-w-0">
-                        <div className="font-extrabold text-sm text-red-600 truncate">
+                        <div className="font-extrabold text-sm text-yellow-600 truncate">
                           {ci.item.name}
                         </div>
                         <div className="text-xs text-neutral-500 font-mono mt-0.5">

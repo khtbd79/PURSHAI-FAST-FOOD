@@ -359,14 +359,14 @@ export function RecipeScreen({
                           className="w-12 h-12 rounded-md object-cover border border-neutral-200 shrink-0 shadow-2xs"
                         />
                       ) : (
-                        <div className="w-12 h-12 rounded-md bg-red-50 border border-red-200 flex items-center justify-center shrink-0 text-red-600 font-black text-sm">
+                        <div className="w-12 h-12 rounded-md bg-yellow-50 border border-yellow-200 flex items-center justify-center shrink-0 text-yellow-600 font-black text-sm">
                           {recipe.menuItemName.charAt(0)}
                         </div>
                       )}
 
                       <div className="flex-1 min-w-0">
                         <div className="flex items-start justify-between gap-1">
-                          <div className="font-extrabold text-sm text-red-600 truncate">
+                          <div className="font-extrabold text-sm text-yellow-600 truncate">
                             {recipe.menuItemName}
                           </div>
                           <span className="text-[10px] font-mono font-bold text-neutral-500 shrink-0">
@@ -421,7 +421,7 @@ export function RecipeScreen({
                       <Utensils className="w-4 h-4 text-white" />
                     </div>
                   )}
-                  <h3 className="font-black text-base sm:text-lg tracking-wide text-red-500 uppercase">
+                  <h3 className="font-black text-base sm:text-lg tracking-wide text-yellow-400 uppercase">
                     {currentRecipe.menuItemName}
                   </h3>
                 </div>
@@ -861,7 +861,7 @@ export function RecipeScreen({
                       />
                     )}
                     <div>
-                      <p className="font-black text-sm uppercase text-red-600">
+                      <p className="font-black text-sm uppercase text-yellow-600">
                         {currentRecipe.menuItemName}
                       </p>
                       <p className="font-bold text-xs text-neutral-800">

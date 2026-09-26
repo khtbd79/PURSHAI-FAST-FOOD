@@ -353,7 +353,7 @@ export function SettingsScreen({
                         ) : null}
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2">
-                            <span className="font-extrabold text-sm sm:text-base text-red-600">
+                            <span className="font-extrabold text-sm sm:text-base text-yellow-600">
                               {item.name}
                             </span>
                             {!item.available && (

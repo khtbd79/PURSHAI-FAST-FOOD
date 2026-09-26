@@ -161,7 +161,7 @@ export function SalesScreen({ sales, settings, onSalesUpdated }: SalesScreenProp
                             />
                           )}
                           <div>
-                            <div className="font-extrabold text-sm text-red-600">{item.itemName}</div>
+                            <div className="font-extrabold text-sm text-yellow-600">{item.itemName}</div>
                             <div className="text-xs text-neutral-500 font-mono">
                               {item.quantity} × {settings.currencySymbol}
                               {item.unitPrice}

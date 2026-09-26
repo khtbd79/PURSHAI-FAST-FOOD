@@ -707,14 +707,14 @@ export function InventoryScreen({
                             className="w-13 h-13 rounded-md object-cover border border-neutral-200 shrink-0 shadow-2xs"
                           />
                         ) : (
-                          <div className="w-13 h-13 rounded-md bg-red-50 border border-red-200 flex items-center justify-center shrink-0 text-red-600 font-black text-lg">
+                          <div className="w-13 h-13 rounded-md bg-yellow-50 border border-yellow-200 flex items-center justify-center shrink-0 text-yellow-600 font-black text-lg">
                             {item.name.charAt(0)}
                           </div>
                         )}
 
                         <div className="flex-1 min-w-0">
                           <div className="flex flex-wrap items-center gap-2">
-                            <span className="font-extrabold text-base text-red-600">
+                            <span className="font-extrabold text-base text-yellow-600">
                               {item.name}
                             </span>
                             <span className="font-mono text-xs font-bold text-neutral-600 bg-neutral-100 px-2 py-0.5 rounded">
